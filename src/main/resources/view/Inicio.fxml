@@ -47,14 +47,8 @@
       <Hyperlink layoutX="330.0" layoutY="157.0" style="-fx-text-fill: #9364E8; -fx-font-size: 9px;" text="Ver histórico →" />
 
       <Rectangle arcHeight="6.0" arcWidth="6.0" fill="#ffffff" height="58.0" layoutX="130.0" layoutY="185.0" width="275.0" />
-      <Label layoutX="140.0" layoutY="192.0" style="-fx-text-fill: #000000; -fx-font-size: 10px; -fx-font-weight: bold;" text="Encapsulamento em Java" />
-      <Label layoutX="140.0" layoutY="208.0" style="-fx-text-fill: #1c1c1e; -fx-font-size: 8.5px;" text="LPOO • Anotação • Hoje, 14:32" />
-      <Label layoutX="140.0" layoutY="224.0" style="-fx-background-color: #64e87e; -fx-text-fill: white; -fx-background-radius: 4; -fx-padding: 1 6 1 6; -fx-font-size: 8px;" text="Anotação" textFill="WHITE" />
 
       <Rectangle arcHeight="6.0" arcWidth="6.0" fill="#ffffff" height="58.0" layoutX="130.0" layoutY="252.0" width="275.0" />
-      <Label layoutX="140.0" layoutY="259.0" style="-fx-text-fill: #000000; -fx-font-size: 10px; -fx-font-weight: bold;" text="Modelo Entidade-Relacionamento" />
-      <Label layoutX="140.0" layoutY="275.0" style="-fx-text-fill: #1c1c1e; -fx-font-size: 8.5px;" text="Banco de Dados • Material • Ontem, 19:15" />
-      <Label layoutX="140.0" layoutY="291.0" style="-fx-background-color: #e86464; -fx-text-fill: white; -fx-background-radius: 4; -fx-padding: 1 8 1 8; -fx-font-size: 8px;" text="PDF" />
 
       <!-- Próximas Atividades -->
       <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#ac96cd" height="125.0" layoutX="418.0" layoutY="185.0" width="156.0" />
