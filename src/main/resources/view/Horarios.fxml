@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.HorariosController">
+    <children>
+        <!-- Menu Lateral Roxo -->
+        <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
+        <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B" />
+
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="85.0" onAction="#abrirInicio" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Início" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="115.0" onAction="#abrirDisciplinas" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Disciplinas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="145.0" onAction="#abrirHorarios" prefWidth="88.0" style="-fx-background-color: #7A4CD1; -fx-text-fill: white; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-radius: 4;" text="Horários" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="175.0" onAction="#abrirNotas" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Notas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="205.0" onAction="#abrirAtividades" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Atividades" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" onAction="#abrirPerfil" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Meu Perfil" />
+
+        <!-- Cabeçalho -->
+        <Label layoutX="130.0" layoutY="22.0" style="-fx-text-fill: #000000; -fx-font-size: 20px; -fx-font-weight: bold;" text="Minha Grade de Horários" />
+        <Button layoutX="524.0" layoutY="22.0" onAction="#adicionarHorario" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="+" />
+
+        <!-- Grade Direta no Fundo -->
+        <GridPane fx:id="gridHorarios" gridLinesVisible="true" layoutX="130.0" layoutY="68.0" prefHeight="300.0" prefWidth="444.0" style="-fx-background-color: rgb(0 0 0); -fx-border-color: #e8ce64;">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" percentWidth="14.0" />
+                <ColumnConstraints halignment="CENTER" percentWidth="17.2" />
+                <ColumnConstraints halignment="CENTER" percentWidth="17.2" />
+                <ColumnConstraints halignment="CENTER" percentWidth="17.2" />
+                <ColumnConstraints halignment="CENTER" percentWidth="17.2" />
+                <ColumnConstraints halignment="CENTER" percentWidth="17.2" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="16.0" valignment="CENTER" />
+                <RowConstraints percentHeight="21.0" valignment="CENTER" />
+                <RowConstraints percentHeight="21.0" valignment="CENTER" />
+                <RowConstraints percentHeight="21.0" valignment="CENTER" />
+                <RowConstraints percentHeight="21.0" valignment="CENTER" />
+            </rowConstraints>
+            <children>
+                <Label style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 10px;" text="Hora" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Label style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 10px;" text="Segunda" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 10px;" text="Terça" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <Label style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 10px;" text="Quarta" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <Label style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 10px;" text="Quinta" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                <Label style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 10px;" text="Sexta" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+
+                <Button style="-fx-background-color: rgb(0 0 0 / 0); -fx-text-fill: #000000; -fx-font-size: 11px;" text="📝" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <Button style="-fx-background-color: transparent; -fx-text-fill: #000000; -fx-font-size: 11px;" text="📝" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <Button style="-fx-background-color: transparent; -fx-text-fill: #000000; -fx-font-size: 11px;" text="📝" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <Button style="-fx-background-color: transparent; -fx-text-fill: #000000; -fx-font-size: 11px;" text="📝" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+
+                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #e8ce64; -fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 10px;" text="LPOO" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #e864c3; -fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 10px;" text="BD 1" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

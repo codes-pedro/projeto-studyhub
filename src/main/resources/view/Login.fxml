@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <HBox layoutX="232.0" prefHeight="400.0" prefWidth="393.0" style="-fx-background-color: #9B6EE6;" />
+      <HBox layoutX="-161.0" prefHeight="400.0" prefWidth="393.0" style="-fx-background-color: #1E1D23;" />
+      <Text fill="WHITE" layoutX="28.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fill="WHITE" layoutX="30.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <TextField layoutX="28.0" layoutY="180.0" style="-fx-background-color: #A3A3A3;" />
+      <Text fill="WHITE" layoutX="28.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senha" />
+      <TextField layoutX="28.0" layoutY="235.0" style="-fx-background-color: #A3A3A3;" />
+      <Button layoutX="76.0" layoutY="270.0" mnemonicParsing="false" style="-fx-background-color: #9B6EE6;" text="Login" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="28.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-effect: #FFFFFF;" text="Login">
+         <font>
+            <Font name="SansSerif Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="26.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esqueceu sua senha?">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <Button layoutX="130.0" layoutY="357.0" mnemonicParsing="false" style="-fx-background-color: #2C2B33;" text="Recuperar" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="322.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S T U D Y">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="322.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H U B">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

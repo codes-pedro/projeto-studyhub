@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.DisciplinasController">
+    <children>
+        <!-- Menu Lateral Roxo -->
+        <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
+        <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B">
+         <font>
+            <Font name="Microsoft Sans Serif" size="12.0" />
+         </font></Label>
+
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="85.0" onAction="#abrirInicio" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Início" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="115.0" onAction="#abrirDisciplinas" prefWidth="88.0" style="-fx-background-color: #7A4CD1; -fx-text-fill: white; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-radius: 4;" text="Disciplinas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="145.0" onAction="#abrirHorarios" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Horários" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="175.0" onAction="#abrirNotas" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Notas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="205.0" onAction="#abrirAtividades" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Atividades" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" onAction="#abrirPerfil" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Meu Perfil" />
+
+        <!-- Cabeçalho e Busca -->
+        <Label layoutX="130.0" layoutY="22.0" style="-fx-text-fill: #000000; -fx-font-size: 20px; -fx-font-weight: bold;" text="Minhas Disciplinas" />
+        <Button layoutX="524.0" layoutY="22.0" onAction="#novaDisciplina" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="+" />
+
+        <TextField fx:id="txtBuscar" layoutX="130.0" layoutY="62.0" prefHeight="28.0" prefWidth="444.0" promptText="Buscar disciplinas..." style="-fx-background-color: #ffffff; -fx-prompt-text-fill: rgb(117 89 157 / 0.1); -fx-text-fill: rgb(117 89 157 / 0.1); -fx-background-radius: 5; -fx-font-size: 11px;" />
+
+        <!-- Disciplina 1 -->
+        <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#ffffff" height="115.0" layoutX="130.0" layoutY="112.0" width="125.0" />
+        <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#c0c0c0" height="68.0" layoutX="130.0" layoutY="112.0" width="125.0" />
+        <Label alignment="CENTER" layoutX="130.0" layoutY="134.0" prefWidth="125.0" style="-fx-text-fill: rgb(192 192 192 / 0.68); -fx-font-size: 18px; -fx-font-weight: bold;" text="LPOO" />
+        <Label layoutX="140.0" layoutY="186.0" style="-fx-text-fill: rgb(0 0 0); -fx-font-size: 10px; -fx-font-weight: bold;" text="LPOO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="140.0" layoutY="202.0" style="-fx-text-fill: #000000; -fx-font-size: 9px;" text="Bruno F." />
+        <Button layoutX="232.0" layoutY="186.0" style="-fx-background-color: transparent; -fx-text-fill: #000000; -fx-font-weight: bold; -fx-padding: 0;" text="⋮" />
+
+        <!-- Disciplina 2 -->
+        <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#ffffff" height="115.0" layoutX="272.0" layoutY="112.0" width="125.0" />
+        <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#c0c0c0" height="68.0" layoutX="272.0" layoutY="112.0" width="125.0" />
+        <Label alignment="CENTER" layoutX="272.0" layoutY="134.0" prefWidth="125.0" style="-fx-text-fill: rgb(192 192 192 / 0.68); -fx-font-size: 18px; -fx-font-weight: bold;" text="BD1" />
+        <Label layoutX="282.0" layoutY="186.0" style="-fx-text-fill: #000000; -fx-font-size: 10px; -fx-font-weight: bold;" text="Banco de Dados" />
+        <Label layoutX="282.0" layoutY="202.0" style="-fx-text-fill: #000000; -fx-font-size: 9px;" text="Mario Gomes" />
+        <Button layoutX="374.0" layoutY="186.0" style="-fx-background-color: transparent; -fx-text-fill: #000000; -fx-font-weight: bold; -fx-padding: 0;" text="⋮" />
+    </children>
+</AnchorPane>
