@@ -6,7 +6,6 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.HorariosController">
     <children>
-        <!-- Menu Lateral Roxo -->
         <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
         <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B" />
 
@@ -17,11 +16,9 @@
         <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="205.0" onAction="#abrirAtividades" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Atividades" />
         <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" onAction="#abrirPerfil" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Meu Perfil" />
 
-        <!-- Cabeçalho -->
         <Label layoutX="130.0" layoutY="22.0" style="-fx-text-fill: #000000; -fx-font-size: 20px; -fx-font-weight: bold;" text="Minha Grade de Horários" />
         <Button layoutX="524.0" layoutY="22.0" onAction="#adicionarHorario" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="+" />
 
-        <!-- Grade Direta no Fundo -->
         <GridPane fx:id="gridHorarios" gridLinesVisible="true" layoutX="130.0" layoutY="68.0" prefHeight="300.0" prefWidth="444.0" style="-fx-background-color: rgb(0 0 0); -fx-border-color: #e8ce64;">
             <columnConstraints>
                 <ColumnConstraints halignment="CENTER" percentWidth="14.0" />

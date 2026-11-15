@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.PerfilController">
+    <children>
+        <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
+        <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B" />
+
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="85.0" onAction="#abrirInicio" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Início" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="115.0" onAction="#abrirDisciplinas" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Disciplinas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="145.0" onAction="#abrirHorarios" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Horários" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="175.0" onAction="#abrirNotas" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Notas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="205.0" onAction="#abrirAtividades" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Atividades" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" onAction="#abrirPerfil" prefWidth="88.0" style="-fx-background-color: #7A4CD1; -fx-text-fill: white; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-radius: 4;" text="Meu Perfil" />
+
+        <Label layoutX="130.0" layoutY="24.0" style="-fx-text-fill: #000000; -fx-font-size: 18px; -fx-font-weight: bold;" text="Dados do estudante" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="314.0" layoutX="121.0" layoutY="54.0" stroke="WHITE" strokeType="INSIDE" width="307.0" />
+
+        <Circle fill="#b798e4" layoutX="175.0" layoutY="115.0" radius="42.0" />
+        <Circle fill="#d9d9d9" layoutX="175.0" layoutY="102.0" radius="13.0" />
+        <Polygon fill="#d9d9d9" layoutX="175.0" layoutY="122.0" points="-14.0, 22.0, 14.0, 22.0, 6.0, -3.0, -6.0, -3.0" />
+        <Button layoutX="141.0" layoutY="170.0" onAction="#alterarFoto" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #9364E8; -fx-text-fill: #d9d9d9; -fx-font-size: 10px; -fx-background-radius: 5;" text="Alterar foto" />
+
+        <Label layoutX="238.0" layoutY="72.0" style="-fx-text-fill: #000000; -fx-font-size: 11px;" text="Nome" />
+        <TextField fx:id="txtNome" layoutX="238.0" layoutY="90.0" prefHeight="15.0" prefWidth="175.0" style="-fx-background-color: #9E9E9E; -fx-text-fill: #211F24; -fx-background-radius: 5;" />
+
+        <Label layoutX="238.0" layoutY="130.0" style="-fx-text-fill: #000000; -fx-font-size: 11px;" text="E-mail" />
+        <TextField fx:id="txtEmail" layoutX="238.0" layoutY="148.0" prefHeight="1.0" prefWidth="175.0" style="-fx-background-color: #9E9E9E; -fx-text-fill: #211F24; -fx-background-radius: 5;" />
+
+        <Button layoutX="212.0" layoutY="317.0" onAction="#salvarAlteracoes" prefHeight="28.0" prefWidth="115.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 11px; -fx-background-radius: 5;" text="Salvar alterações" />
+
+        <Label layoutX="440.0" layoutY="28.0" style="-fx-text-fill: #000000; -fx-font-size: 14px; -fx-font-weight: bold;" text="Configurações" />
+
+        <Button layoutX="440.0" layoutY="72.0" onAction="#alterarSenha" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000; -fx-font-size: 10px; -fx-background-radius: 5;" text="Alterar senha" />
+
+        <Label layoutX="440.0" layoutY="118.0" style="-fx-text-fill: #000000; -fx-font-size: 10px;" text="Tema do sistema" />
+        <ComboBox fx:id="cbTema" layoutX="440.0" layoutY="136.0" prefHeight="26.0" prefWidth="135.0" promptText="Escuro" style="-fx-background-color: #ffffff; -fx-background-radius: 5;" />
+
+        <Label layoutX="440.0" layoutY="182.0" style="-fx-text-fill: #000000; -fx-font-size: 10px;" text="Notificações" />
+        <ToggleButton fx:id="tglNotificacoes" layoutX="525.0" layoutY="178.0" prefHeight="22.0" prefWidth="50.0" selected="true" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 9px; -fx-background-radius: 10;" text="ON" />
+    </children>
+</AnchorPane>

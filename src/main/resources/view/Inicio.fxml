@@ -7,7 +7,6 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.InicioController">
    <children>
-      <!-- Menu Lateral Roxo -->
       <Rectangle fill="#9b6ee6" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
       <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B">
          <font>
@@ -21,11 +20,9 @@
       <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="205.0" onAction="#abrirAtividades" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Atividades" />
       <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" onAction="#abrirPerfil" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Meu Perfil" />
 
-      <!-- Título -->
       <Label fx:id="lblSaudacao" layoutX="130.0" layoutY="20.0" style="-fx-text-fill: black; -fx-font-size: 20px; -fx-font-weight: bold;" text="Olá, usuário!" />
       <Label layoutX="130.0" layoutY="46.0" style="-fx-text-fill: #000000; -fx-font-size: 10px;" text="Bem-vindo(a) ao seu espaço acadêmico!" />
 
-      <!-- 4 Blocos de Métricas -->
       <Rectangle arcHeight="8.0" arcWidth="8.0" fill="WHITE" height="68.0" layoutX="130.0" layoutY="72.0" width="102.0" />
       <Label fx:id="lblQtdDisciplinas" alignment="CENTER" layoutX="130.0" layoutY="80.0" prefWidth="102.0" style="-fx-text-fill: #9364E8; -fx-font-size: 20px; -fx-font-weight: bold;" text="0" />
       <Label alignment="CENTER" layoutX="130.0" layoutY="112.0" prefWidth="102.0" style="-fx-text-fill: #000000; -fx-font-size: 9px;" text="Disciplinas" />
@@ -42,7 +39,6 @@
       <Label fx:id="lblProximasEntregas" alignment="CENTER" layoutX="472.0" layoutY="80.0" prefWidth="102.0" style="-fx-text-fill: #9364E8; -fx-font-size: 20px; -fx-font-weight: bold;" text="0" />
       <Label alignment="CENTER" layoutX="472.0" layoutY="112.0" prefWidth="102.0" style="-fx-text-fill: #000000; -fx-font-size: 9px;" text="Próximas entregas" />
 
-      <!-- Continue de onde parou -->
       <Label layoutX="130.0" layoutY="158.0" style="-fx-text-fill: #000000; -fx-font-size: 13px; -fx-font-weight: bold;" text="Continue de onde parou" />
       <Hyperlink layoutX="330.0" layoutY="157.0" style="-fx-text-fill: #9364E8; -fx-font-size: 9px;" text="Ver histórico →" />
 
@@ -50,7 +46,6 @@
 
       <Rectangle arcHeight="6.0" arcWidth="6.0" fill="#ffffff" height="58.0" layoutX="130.0" layoutY="252.0" width="275.0" />
 
-      <!-- Próximas Atividades -->
       <Rectangle arcHeight="8.0" arcWidth="8.0" fill="#ac96cd" height="125.0" layoutX="418.0" layoutY="185.0" width="156.0" />
       <Label layoutX="428.0" layoutY="194.0" style="-fx-text-fill: #000000; -fx-font-size: 11px; -fx-font-weight: bold;" text="Próximas Atividades" />
       <Label layoutX="428.0" layoutY="218.0" style="-fx-text-fill: #000000; -fx-font-size: 9px;" text="Nenhuma atividade para&#10;a próxima semana!" />

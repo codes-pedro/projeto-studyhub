@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.NotasController">
+    <children>
+        <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
+        <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B" />
+
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="85.0" onAction="#abrirInicio" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Início" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="115.0" onAction="#abrirDisciplinas" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Disciplinas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="145.0" onAction="#abrirHorarios" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Horários" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="175.0" onAction="#abrirNotas" prefWidth="88.0" style="-fx-background-color: #7A4CD1; -fx-text-fill: white; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-radius: 4;" text="Notas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="205.0" onAction="#abrirAtividades" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Atividades" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" onAction="#abrirPerfil" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Meu Perfil" />
+
+        <Label layoutX="130.0" layoutY="22.0" style="-fx-text-fill: #000000; -fx-font-size: 20px; -fx-font-weight: bold;" text="Minhas notas" />
+        <Label layoutX="375.0" layoutY="28.0" style="-fx-text-fill: #000000; -fx-font-size: 10px;" text="Disciplina:" />
+        <ComboBox fx:id="cbDisciplina" layoutX="430.0" layoutY="23.0" prefHeight="24.0" prefWidth="144.0" style="-fx-background-color: #9364E8; -fx-background-radius: 5;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b5b5b5" height="306.0" layoutX="118.0" layoutY="67.0" stroke="#b5b5b5" strokeType="INSIDE" width="470.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="69.0" layoutX="130.0" layoutY="288.0" stroke="WHITE" strokeType="INSIDE" width="264.0" />
+        <Label layoutX="145.0" layoutY="306.0" style="-fx-text-fill: #000000; -fx-font-size: 10px;" text="Média Final" />
+        <Label fx:id="lblMediaFinal" layoutX="145.0" layoutY="323.0" style="-fx-text-fill: rgb(158 110 228); -fx-font-size: 18px; -fx-font-weight: bold;" text="0,0" />
+        <Label fx:id="lblStatusAprovacao" layoutX="265.0" layoutY="315.0" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: #B5B5B5; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 11px; -fx-padding: 5 18 5 18; -fx-background-radius: 6;" textFill="#908e8e" />
+
+        <Label alignment="CENTER" layoutX="420.0" layoutY="92.0" prefWidth="154.0" style="-fx-text-fill: #000000; -fx-font-weight: bold; -fx-font-size: 11px;" text="Desempenho da disciplina" />
+        <Circle fill="TRANSPARENT" layoutX="497.0" layoutY="185.0" radius="52.0" stroke="#2D2B30" strokeWidth="14.0" />
+        <Arc centerX="497.0" centerY="185.0" fill="TRANSPARENT" length="-216.0" radiusX="52.0" radiusY="52.0" startAngle="90.0" stroke="#2d2b30" strokeWidth="14.0" />
+        <Label fx:id="lblPorcentagem" alignment="CENTER" layoutX="457.0" layoutY="173.0" prefWidth="80.0" style="-fx-text-fill: #000000; -fx-font-size: 18px; -fx-font-weight: bold;" text="0%" />
+      <GridPane gridLinesVisible="true" layoutX="130.0" layoutY="100.0" prefHeight="58.0" prefWidth="264.0" style="-fx-background-color: #ffffff;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="133.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0" minWidth="10.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="70.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" layoutX="50.0" prefHeight="17.0" prefWidth="131.0" text="Avaliações" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="17.0" prefWidth="131.0" text="Nota" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="142.0" layoutY="13.0" prefHeight="17.0" prefWidth="131.0" text="Peso" textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button layoutX="218.0" layoutY="174.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="88.0" style="-fx-background-color: #9E6EE4;" text="+" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
