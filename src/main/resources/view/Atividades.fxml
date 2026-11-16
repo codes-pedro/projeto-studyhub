@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.HorariosController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controleView.AtividadesControle">
    <children>
       <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
       <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B" />
@@ -23,7 +23,7 @@
          </font></Button>
       <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" onAction="#abrirPerfil" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Meu Perfil" />
       <Label layoutX="130.0" layoutY="22.0" prefHeight="30.0" prefWidth="274.0" style="-fx-text-fill: #000000; -fx-font-size: 20px; -fx-font-weight: bold;" text="Minhas Atividades" />
-      <Button layoutX="318.0" layoutY="22.0" onAction="#adicionarHorario" prefHeight="30.0" prefWidth="157.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text=" + Nova atividade" />
+      <Button layoutX="318.0" layoutY="22.0" prefHeight="30.0" prefWidth="157.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text=" + Nova atividade" />
       <GridPane fx:id="gridHorarios" gridLinesVisible="true" layoutX="130.0" layoutY="127.0" prefHeight="167.0" prefWidth="424.0" style="-fx-background-color: rgb(0 0 0); -fx-border-color: #e8ce64;">
          <columnConstraints>
             <ColumnConstraints halignment="CENTER" percentWidth="20.0" />
@@ -55,17 +55,17 @@
       <Button layoutX="556.0" layoutY="269.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" text="✎" />
       <Button layoutX="556.0" layoutY="175.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="30.0" text="✎" />
       <Button layoutX="556.0" layoutY="145.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="30.0" text="✎" />
-      <Button layoutX="130.0" layoutY="70.0" onAction="#adicionarHorario" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Todas">
+      <Button layoutX="130.0" layoutY="70.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Todas">
          <font>
             <Font size="10.0" />
          </font>
       </Button>
-      <Button layoutX="249.0" layoutY="70.0" onAction="#adicionarHorario" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Pendentes">
+      <Button layoutX="249.0" layoutY="70.0" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Pendentes">
          <font>
             <Font size="10.0" />
          </font>
       </Button>
-      <Button layoutX="365.0" layoutY="70.0" onAction="#adicionarHorario" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Concluídas">
+      <Button layoutX="365.0" layoutY="70.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="Concluídas">
          <font>
             <Font size="10.0" />
          </font>

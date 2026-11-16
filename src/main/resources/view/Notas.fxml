@@ -5,7 +5,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.NotasController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E3E3E3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controleView.NotasControle">
     <children>
         <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
         <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B" />

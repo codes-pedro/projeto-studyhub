@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controleView.CriarContaControle">
    <children>
       <HBox layoutX="232.0" prefHeight="400.0" prefWidth="393.0" style="-fx-background-color: #9B6EE6;" />
       <HBox layoutX="-161.0" prefHeight="400.0" prefWidth="393.0" style="-fx-background-color: #1E1D23;" />
@@ -25,7 +25,7 @@
             <Font size="8.0" />
          </font>
       </Text>
-      <Button layoutX="155.0" layoutY="357.0" mnemonicParsing="false" style="-fx-background-color: #2C2B33;" text="Login" textFill="WHITE" />
+      <Button layoutX="155.0" layoutY="357.0" mnemonicParsing="false" onAction="#abrirLogin" style="-fx-background-color: #2C2B33;" text="Login" textFill="WHITE" />
       <Text fill="WHITE" layoutX="322.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S T U D Y">
          <font>
             <Font name="System Bold" size="48.0" />

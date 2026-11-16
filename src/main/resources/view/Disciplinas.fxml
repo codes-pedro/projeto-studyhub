@@ -5,7 +5,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studyhub.controller.DisciplinasController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e3e3e3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controleView.DisciplinaControle">
     <children>
         <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
         <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B">
@@ -21,7 +21,7 @@
         <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" onAction="#abrirPerfil" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Meu Perfil" />
 
         <Label layoutX="130.0" layoutY="22.0" style="-fx-text-fill: #000000; -fx-font-size: 20px; -fx-font-weight: bold;" text="Minhas Disciplinas" />
-        <Button layoutX="524.0" layoutY="22.0" onAction="#novaDisciplina" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="+" />
+        <Button layoutX="524.0" layoutY="22.0" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: #9364E8; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5;" text="+" />
 
         <TextField fx:id="txtBuscar" layoutX="130.0" layoutY="62.0" prefHeight="28.0" prefWidth="444.0" promptText="Buscar disciplinas..." style="-fx-background-color: #ffffff; -fx-prompt-text-fill: rgb(117 89 157 / 0.1); -fx-text-fill: rgb(117 89 157 / 0.1); -fx-background-radius: 5; -fx-font-size: 11px;" />
         <Label layoutX="280.0" layoutY="200.0" style="-fx-text-fill: rgb(0 0 0); -fx-font-size: 10px; -fx-font-weight: bold;" text="Você ainda não possui conteudo." textAlignment="CENTER" textFill="#9e9c9c">
