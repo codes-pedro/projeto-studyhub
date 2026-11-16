@@ -1,0 +1,125 @@
+-- =========================================================
+-- Banco de dados: projeto_studyhub
+-- Script consolidado a partir dos SHOW CREATE TABLE enviados.
+-- Ordem: estudante, professor, disciplina, horario,
+--        atividade, nota e anotacao.
+-- =========================================================
+
+CREATE DATABASE IF NOT EXISTS projeto_studyhub
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_0900_ai_ci;
+
+USE projeto_studyhub;
+
+-- 1. ESTUDANTE
+CREATE TABLE estudante (
+    id_estudante INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id_estudante),
+    UNIQUE KEY email (email)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+-- 2. PROFESSOR
+CREATE TABLE professor (
+    id_professor INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(150) DEFAULT NULL,
+    PRIMARY KEY (id_professor)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+-- 3. DISCIPLINA
+-- Cada disciplina pertence a um estudante e referencia um professor.
+CREATE TABLE disciplina (
+    id_disciplina INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    id_estudante INT NOT NULL,
+    id_professor INT NOT NULL,
+    PRIMARY KEY (id_disciplina),
+    KEY id_estudante (id_estudante),
+    KEY fk_disciplina_professor (id_professor),
+    CONSTRAINT disciplina_ibfk_1
+        FOREIGN KEY (id_estudante)
+        REFERENCES estudante (id_estudante),
+    CONSTRAINT fk_disciplina_professor
+        FOREIGN KEY (id_professor)
+        REFERENCES professor (id_professor)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+-- 4. HORARIO
+-- Cada horário está vinculado a uma disciplina.
+CREATE TABLE horario (
+    id_horario INT NOT NULL AUTO_INCREMENT,
+    dia_semana VARCHAR(20) NOT NULL,
+    hora_inicio TIME NOT NULL,
+    hora_fim TIME NOT NULL,
+    id_disciplina INT NOT NULL,
+    PRIMARY KEY (id_horario),
+    KEY fk_horario_disciplina (id_disciplina),
+    CONSTRAINT fk_horario_disciplina
+        FOREIGN KEY (id_disciplina)
+        REFERENCES disciplina (id_disciplina)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+-- 5. ATIVIDADE
+-- Cada atividade está vinculada a uma disciplina.
+CREATE TABLE atividade (
+    id_atividade INT NOT NULL AUTO_INCREMENT,
+    titulo VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    data_entrega DATE DEFAULT NULL,
+    status TINYINT(1) DEFAULT '0',
+    id_disciplina INT NOT NULL,
+    PRIMARY KEY (id_atividade),
+    KEY fk_atividade_disciplina (id_disciplina),
+    CONSTRAINT fk_atividade_disciplina
+        FOREIGN KEY (id_disciplina)
+        REFERENCES disciplina (id_disciplina)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+-- 6. NOTA
+-- Cada nota pertence a uma disciplina.
+CREATE TABLE nota (
+    id_nota INT NOT NULL AUTO_INCREMENT,
+    descricao VARCHAR(100) NOT NULL,
+    valor DECIMAL(5,2) NOT NULL,
+    peso DECIMAL(5,2) DEFAULT NULL,
+    id_disciplina INT NOT NULL,
+    PRIMARY KEY (id_nota),
+    KEY fk_nota_disciplina (id_disciplina),
+    CONSTRAINT fk_nota_disciplina
+        FOREIGN KEY (id_disciplina)
+        REFERENCES disciplina (id_disciplina)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+-- 7. ANOTACAO
+-- A coluna id_atividade permanece permitindo NULL,
+-- conforme a estrutura atual mostrada no Workbench.
+CREATE TABLE anotacao (
+    id_anotacao INT NOT NULL AUTO_INCREMENT,
+    titulo VARCHAR(100) NOT NULL,
+    conteudo TEXT,
+    id_atividade INT DEFAULT NULL,
+    PRIMARY KEY (id_anotacao),
+    KEY fk_anotacao_atividade (id_atividade),
+    CONSTRAINT fk_anotacao_atividade
+        FOREIGN KEY (id_atividade)
+        REFERENCES atividade (id_atividade)
+) ENGINE=InnoDB
+  DEFAULT CHARSET=utf8mb4
+  COLLATE=utf8mb4_0900_ai_ci;
+
+-- Fim do script de criação da estrutura do StudyHub.
