@@ -9,12 +9,12 @@
         <Rectangle fill="#9364E8" height="400.0" layoutX="0.0" layoutY="0.0" width="110.0" />
         <Label layoutX="16.0" layoutY="22.0" style="-fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="S T U D Y&#10;H U B" />
 
-        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="85.0" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Início" />
-        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="115.0" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Disciplinas" />
-        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="145.0" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Horários" />
-        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="175.0" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Notas" />
-        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="205.0" prefWidth="88.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Atividades" />
-        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" prefWidth="88.0" style="-fx-background-color: #7A4CD1; -fx-text-fill: white; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-radius: 4;" text="Meu Perfil" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="85.0" prefWidth="88.0" onAction="#abrirInicio" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Início" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="115.0" prefWidth="88.0" onAction="#abrirDisciplinas" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Disciplinas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="145.0" prefWidth="88.0" onAction="#abrirHorarios" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Horários" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="175.0" prefWidth="88.0" onAction="#abrirNotas" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Notas" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="205.0" prefWidth="88.0" onAction="#abrirAtividades" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 11px;" text="Atividades" />
+        <Button alignment="BASELINE_LEFT" layoutX="12.0" layoutY="235.0" prefWidth="88.0" onAction="#abrirPerfil" style="-fx-background-color: #7A4CD1; -fx-text-fill: white; -fx-font-size: 11px; -fx-font-weight: bold; -fx-background-radius: 4;" text="Meu Perfil" />
 
         <Label layoutX="130.0" layoutY="24.0" style="-fx-text-fill: #000000; -fx-font-size: 18px; -fx-font-weight: bold;" text="Dados do estudante" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="314.0" layoutX="121.0" layoutY="54.0" stroke="WHITE" strokeType="INSIDE" width="307.0" />
